@@ -1,0 +1,19 @@
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/fonts/Vazirmatn-RD-FD-Regular.woff2) format(woff2);
+}
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../assets/fonts/Vazirmatn-RD-FD-Bold.woff2) format(woff2);
+}
+
+body,
+button,
+input,
+select {
+  font-family: vazir;
+}
