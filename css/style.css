@@ -171,6 +171,11 @@ h3 {
   transform: rotate(-45deg) translate(5px);
 }
 
+.phone-banner {
+  display: none;
+}
+
+/* Desktop */
 @media all and (min-width: 1024px) {
   .nav__items {
     flex-direction: row;
@@ -186,5 +191,102 @@ h3 {
   }
   .nav__toggle {
     display: none;
+  }
+}
+
+/* Tapsi-Box */
+
+.img__container > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 3 / 4;
+}
+
+.tapsi-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  padding: 1.5rem;
+  border-radius: 3.2rem;
+  color: var(--color-white);
+  background: linear-gradient(
+    68.18deg,
+    rgba(23, 26, 60, 0.7) 4.77%,
+    rgba(23, 26, 60, 0.3) 98.84%
+  );
+  position: relative;
+  bottom: 38rem;
+}
+.tapsi-box h2 {
+  color: var(--color-white);
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+.tapsi-box .tapsi-box__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.tapsi-box .tapsi-box__links .tapsi-box__link {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+.tapsi-box__link.primary {
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+.tapsi-box__link.secondary {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+/* Desktop */
+@media all and (min-width: 1024px) {
+  .img__container > img {
+    width: 1520px;
+    margin: auto -19rem;
+    aspect-ratio: 9 / 3;
+  }
+  .tapsi-box {
+    font-size: 2rem;
+    width: 675px;
+    position: relative;
+    left: 15rem;
+    padding-right: 2rem;
+  }
+  .tapsi-box h2 {
+    font-size: 3.5rem;
+  }
+  .tapsi-box .tapsi-box__links {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .tapsi-box .tapsi-box__links .tapsi-box__link {
+    font-size: 1.6rem;
+    width: 300px;
+    max-width: 300px;
+  }
+  .phone-banner {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15rem;
   }
 }
