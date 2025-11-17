@@ -245,7 +245,7 @@ textarea {
   );
   position: absolute;
   bottom: 16.5rem;
-  right: 3rem;
+  right: 5rem;
 }
 .hero-wrapper .tapsi-box h2 {
   color: var(--color-white);
