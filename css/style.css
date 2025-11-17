@@ -230,7 +230,7 @@ textarea {
   margin-bottom: 3rem;
 }
 
-.tapsi-box {
+.hero-wrapper .tapsi-box {
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
@@ -247,7 +247,7 @@ textarea {
   bottom: 16.5rem;
   right: 3rem;
 }
-.tapsi-box h2 {
+.hero-wrapper .tapsi-box h2 {
   color: var(--color-white);
   font-size: 2.5rem;
   padding: 0.5rem 0;
@@ -295,14 +295,14 @@ textarea {
     left: 0;
     margin-bottom: 20rem;
   }
-  .tapsi-box {
+  .hero-wrapper .tapsi-box {
     font-size: 2rem;
     width: 675px;
     right: -8rem;
     bottom: 10rem;
     padding-right: 2rem;
   }
-  .tapsi-box h2 {
+  .hero-wrapper .tapsi-box h2 {
     font-size: 3.5rem;
   }
   .tapsi-box .tapsi-box__links {
@@ -310,6 +310,10 @@ textarea {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+  }
+  .tapsi-box .tapsi-box__links a:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
   }
   .tapsi-box .tapsi-box__links .tapsi-box__link {
     font-size: 1.6rem;
